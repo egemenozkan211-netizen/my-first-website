@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Çevre Bilinçli Web</title>
+  <style>
+    /* Genel sıfırlama */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f4f4f4;
+    }
+
+    /* Navbar */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #333;
+      color: white;
+    }
+
+    nav .logo {
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    nav .menu {
+      display: flex;
+      gap: 20px;
+    }
+
+    nav .menu a {
+      text-decoration: none;
+      color: white;
+      transition: color 0.3s;
+    }
+
+    nav .menu a:hover {
+      color: #ffcc00;
+    }
+
+    /* Hero bölümü */
+    .hero {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      height: 90vh;
+      background: linear-gradient(to right, #e3b200, #ff9800);
+      color: white;
+      padding: 0 20px;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .hero button {
+      padding: 12px 24px;
+      border: none;
+      border-radius: 6px;
+      background: #ff9800;
+      color: white;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .hero button:hover {
+      background: #e68900;
+    }
+
+    /* İki sütunlu içerik */
+    .two-column {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 40px 20px;
+      background: white;
+    }
+
+    .text-column {
+      flex: 1 1 45%;
+      background: #f9f9f9;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .text-column h2 {
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .text-column p {
+      color: #555;
+    }
+
+    /* Responsive */
+    @media(max-width: 768px){
+      .two-column {
+        flex-direction: column;
+      }
+
+      .text-column {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">çevrebilinç.com</div>
+    <div class="menu">
+      <a href="#">uyarı</a>
+      <a href="#">ne yapabiliriz</a>
+      <a href="#">küçüksemeyin</a>
+      <a href="#">hadi adım at</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <h1>Websiteme Hoş Geldiniz</h1>
+    <p>Başarınız bizimle başlar. Birlikte muhteşem bir şey inşa edelim.</p>
+    <button>Başlayın</button>
+  </header>
+
+  <!-- İçerik -->
+  <section class="two-column">
+    <div class="text-column">
+      <h2>Uyarı</h2>
+      <p>Tekstil konusunda lütfen bilinçli davranalım. Her saniye birçok litre su harcanıyor ve bu konuda alay etmemeliyiz. Biz "kullan-at" yerine yeniden kullanım yöntemini tercih ediyoruz.</p>
+    </div>
+    <div class="text-column">
+      <h2>Peki Ne Yapabiliriz?</h2>
+      <p>Kullanıp atmak yerine başka şeylere dönüştürebiliriz. Örneğin Fransa'da kıyafetlerden tuğla yapıyorlar. Hızlı moda yerine yavaş modayı kullanmalıyız.</p>
+    </div>
+    <div class="text-column">
+      <h2>Küçüksemeyin</h2>
+      <p>Bu konuyu küçük görebilirsiniz ama sonraki nesli düşünün. Çocuklarınız veya torunlarınız kurak, susuz bir yerde yaşayacak. Bu doğru değil.</p>
+    </div>
+    <div class="text-column">
+      <h2>Hadi Adım At</h2>
+      <p>Eğer böyle bir dünya istemiyorsanız bize katılın. Bu durumu ancak birlikte çözebiliriz.</p>
+    </div>
+    <div class="text-column">
+      <h2>Bize Ulaşın</h2>
+      <p>Egemen Kuş Studio <br> <a href="https://www.youtube.com/@EGEMENKUŞSTUDİO" target="_blank">YouTube Kanalı</a></p>
+    </div>
+  </section>
+</body>
+</html>
